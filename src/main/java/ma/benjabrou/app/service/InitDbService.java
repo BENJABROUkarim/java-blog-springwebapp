@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
-import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import ma.benjabrou.app.entity.Blog;
 import ma.benjabrou.app.entity.Item;
@@ -17,6 +17,7 @@ import ma.benjabrou.app.repository.BlogRepository;
 import ma.benjabrou.app.repository.ItemRepository;
 import ma.benjabrou.app.repository.RoleRepository;
 import ma.benjabrou.app.repository.UserRepository;
+
 @Transactional
 @Service
 public class InitDbService {
