@@ -43,7 +43,7 @@ public class InitDbService {
 		roleadmin.setName("ROLE_ADMIN");	
 		rolerepository.save(roleadmin);
 		
-		 /*User useradmin = new User();
+		 User useradmin = new User();
 		useradmin.setName("admin");
 		List<Role> roles= new ArrayList<Role>();
 		roles.add(roleadmin);
@@ -61,7 +61,7 @@ public class InitDbService {
 		item1.setBlog(blogjavavids);
 		item1.setTitle("first");
 		//item1.setLink("http://www.javavids.com");
-	//	item1.setPublishedDate(new Date(0));
+		item1.setPublishedDate(new Date(0));
 		itemrepository.save(item1);
 		
 		Item item2=new Item();
@@ -69,6 +69,6 @@ public class InitDbService {
 		item2.setTitle("second");
 		//item2.setLink("http://www.javavids.com");
 		item2.setPublishedDate(new Date(0));
-		itemrepository.save(item2);*/
+		itemrepository.save(item2);
 	}
 }
